@@ -34,6 +34,7 @@ const Home = () => {
             .catch((error) => {
                 console.error("Error sending message:", error);
             });
+            console.log(1);
             
     }
     return (
