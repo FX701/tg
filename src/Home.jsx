@@ -39,7 +39,7 @@ const Home = () => {
     return (
         <div className=''>
 
-            <div className="flex justify-center flex-col bg-black h-full flex-row p-20 items-center">
+            <div className="flex justify-center flex-col bg-black h-full  p-20 items-center">
                 <div className="flex flex-col gap-5 ">
                     <h1 className='text-[#00B3B3] text-xl'>СВЯЗАТЬСЯ СЕЙЧАС</h1>
                     <h1 className='text-5xl text-white' >Оставьте нам сообщение</h1>
