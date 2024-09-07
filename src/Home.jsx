@@ -17,6 +17,10 @@ const Home = () => {
     } = useForm()
 
     const onSubmit = (data) => {
+        console.log(1);
+        console.log(data.ism);
+        
+        // e.preventDefault()
         window.location.reload();
         axios
             .post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -34,7 +38,7 @@ const Home = () => {
             .catch((error) => {
                 console.error("Error sending message:", error);
             });
-            console.log(1);
+            
             
     }
     return (
