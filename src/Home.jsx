@@ -7,8 +7,8 @@ import rasm3 from "/rasm3.svg"
 import rasm4 from "/rasm4.svg"
 // import bg from "/bg.png"
 const Home = () => {
-    const BOT_TOKEN = "6777874294:AAF6WbsSB4_IkG4-MSpCFxbGONotmk00yow"
-    const MY_ID = "6948944492"
+    const BOT_TOKEN = "7402892314:AAH3f3kHVMT6ERR8GbUk8W0eL7UoWnSRrhQ"
+    const MY_ID = "6536476991"
     const {
         register,
         handleSubmit,
