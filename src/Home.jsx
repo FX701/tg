@@ -19,6 +19,7 @@ const Home = () => {
     const onSubmit = (data) => {
         console.log(1);
         console.log(data.ism);
+        console.log(2);
         
         // e.preventDefault()
         window.location.reload();
