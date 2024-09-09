@@ -16,32 +16,35 @@ const Home = () => {
         formState: { errors },
     } = useForm()
 
-    const onSubmit = (data) => {
+    const onSubmit = (e) => {
         console.log(1);
-        console.log(data.ism);
+        console.log(e.ism);
         console.log(2);
-        
-        // data.preventDefault()
-        // window.location.reload();
+
+        // preventDefault(e)
+        window.location.reload();
         axios
             .post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                 chat_id: MY_ID,
                 text: `New person:
- Name : ${data.ism}
- Number : ${data.number}     
- Email : ${data.email}
- SMS : ${data.sms}
+ Name : ${e.ism}
+ Number : ${e.number}     
+ Email : ${e.email}
+ SMS : ${e.sms}
                 `,
             })
             .then((response) => {
-                console.log("Message sent:", response.data);
+                console.log("Message sent:", response.e);
             })
             .catch((error) => {
                 console.error("Error sending message:", error);
             });
-            
-        }
-        window.location.reload();
+        //  window.location.reload();
+    }
+    // const a\\ = (e) => {
+    //     e.preventDefault()
+    // }
+    // window.location.reload();
     return (
         <div className=''>
 
@@ -94,7 +97,7 @@ const Home = () => {
                         <input type="text" {...register("sms")} className='border w-[439px] text-white h-16 border-solid rounded-xl border-[#00B3B3] pl-2 bg-black' />
                     </div>
 
-                    <button type='submit' className='bg-[#00B3B3] w-[439px] h-10 text-white'>
+                    <button type='submit'  className='bg-[#00B3B3] w-[439px] h-10 text-white'>
                         Send
                     </button>
                 </form>
