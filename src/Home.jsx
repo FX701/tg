@@ -21,8 +21,8 @@ const Home = () => {
         console.log(data.ism);
         console.log(2);
         
-        // e.preventDefault()
-        window.location.reload();
+        e.preventDefault()
+        // window.location.reload();
         axios
             .post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                 chat_id: MY_ID,
