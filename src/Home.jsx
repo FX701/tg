@@ -46,7 +46,7 @@ const Home = () => {
         <div className=''>
 
             <div className="flex justify-center flex-col bg-black h-full  p-20 items-center">
-                <div className="flex flex-col gap-5 ">
+                {/* <div className="flex flex-col gap-5 ">
                     <h1 className='text-[#00B3B3] text-xl'>СВЯЗАТЬСЯ СЕЙЧАС</h1>
                     <h1 className='text-5xl text-white' >Оставьте нам сообщение</h1>
                     <div className="w-[340px]">
@@ -71,7 +71,7 @@ const Home = () => {
                     {/* <div className="flex bg-[#00B3B3]  flex-row">
                    <img src={bg} alt="logo" width={500} />
                     </div> */}
-                </div>
+                {/* </div>  */}
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10 ">
                     <div className="flex flex-row gap-5 ">
                         <div className="flex flex-col gap-2">
