@@ -1,10 +1,10 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import rasm1 from "/rasm1.svg"
-import rasm2 from "/rasm2.svg"
-import rasm3 from "/rasm3.svg"
-import rasm4 from "/rasm4.svg"
+// import rasm1 from "/rasm1.svg"
+// import rasm2 from "/rasm2.svg"
+// import rasm3 from "/rasm3.svg"
+// import rasm4 from "/rasm4.svg"
 // import bg from "/bg.png"
 const Home = () => {
     const BOT_TOKEN = "7402892314:AAH3f3kHVMT6ERR8GbUk8W0eL7UoWnSRrhQ"
