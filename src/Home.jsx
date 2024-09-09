@@ -40,8 +40,8 @@ const Home = () => {
                 console.error("Error sending message:", error);
             });
             
-            window.location.reload();
-    }
+        }
+        window.location.reload();
     return (
         <div className=''>
 
